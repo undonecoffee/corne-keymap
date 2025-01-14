@@ -33,7 +33,7 @@
 //                    | LALT|LCTRL| SPC |   | ENT | RSE  | lwr |
                         bindings = <
    &kp TAB &kp Q &kp W &kp E &kp R &kp T    &kp Y  &kp U  &kp I &kp O &kp P  &kp APOS
-   &kp ESC &kp A &kp S &kp D &rpi LEFT_SHIFT F &kp G   &kp H &rpi LEFT_SHIFT J &kp K &kp L &kp BSPC &kp FSLH
+   &kp ESC &kp A &kp S &kp D &kp F &rpi LEFT_SHIFT G  &kp H &rpi LEFT_SHIFT J &kp K &kp L &kp BSPC &kp FSLH
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &trans &kp COMMA &kp DOT &kp LGUI
                   &kp LALT &kp LCTRL &kp SPACE &kp RET &mo 2 &mo 1
                         >;
