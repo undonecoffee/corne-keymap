@@ -40,12 +40,12 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |   F1   |  F2  |  F3  |  F4  |  F5   |  F6  |   |PSCRN| DEL |     |     | play |  VUP |
+// |   F1   |  F2  |  F3  |  F4  |  F5   |  F6  |   |PSCRN| DEL | pgUp| pgDn| play |  VUP |
 // |   F7   |  F8  |  F9  |  F10 |  F11  |  F12 |   | LFT | DWN |  UP | RGT | next | VDWN |
 // |bt clear| LSHFT| LALT |   ^  |   %   |      |   |  @  |  #  |  \  |  ~  |      |      |
 //                        | CAPS | LCTRL |      |   |     |     |     |
                         bindings = <
-    &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6    &kp PSCRN &kp DEL &trans &trans &kp C_PP &kp C_VOL_UP
+    &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6    &kp PSCRN &kp DEL &kp PG_UP &kp PG_DN &kp C_PP &kp C_VOL_UP
     &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_NEXT &kp C_VOL_DN
     &bt BT_CLR &kp LSHFT &kp LALT &kp CARET &kp PRCNT &trans    &kp AT &kp HASH &kp BSLH &kp TILDE &trans &trans
                          &kp CAPS &kp LCTRL &trans    &trans &trans &trans
