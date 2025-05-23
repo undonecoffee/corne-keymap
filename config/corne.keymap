@@ -27,14 +27,14 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  '  |
-// |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |BSPC |  /  |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |     |  ,  |  .  | GUI |
+// |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  '  |BSPC |
+// |  ESC |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |  /  |
+// | SHFT |  X  |  C  |  D  |  V  |  Z  |   |  K  |  H   |     |  ,  |  .  | GUI |
 //                    | LALT|LCTRL| SPC |   | ENT | RSE  | lwr |
                         bindings = <
-   &kp TAB &kp Q &kp W &kp E &kp R &kp T    &kp Y  &kp U  &kp I &kp O &kp P  &kp APOS
-   &kp ESC &kp A &kp S &kp D &kp F &rpi LEFT_SHIFT G  &kp H &kp J &kp K &kp L &kp BSPC &kp FSLH
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &rpi LEFT_SHIFT N &kp M  &trans &kp COMMA &kp DOT &kp LGUI
+   &kp TAB &kp Q &kp W &kp F &kp P &kp B    &kp J  &kp L  &kp U &kp Y &kp APOS  &kp BSPC
+   &kp ESC &kp A &kp R &kp S &kp T &rpi LEFT_SHIFT G  &kp M &kp N &kp E &kp I &kp O &kp FSLH
+ &kp LSHFT &kp X &kp C &kp D &kp V &kp Z   &rpi LEFT_SHIFT K &kp H &trans &kp COMMA &kp DOT &kp LGUI
                   &kp LALT &kp LCTRL &kp SPACE &kp RET &mo 2 &mo 1
                         >;
                 };
