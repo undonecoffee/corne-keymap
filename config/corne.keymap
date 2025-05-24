@@ -1,4 +1,4 @@
-/*
+ddddd/*
  * Copyright (c) 2020 The ZMK Contributors
  * ...
  * SPDX-License-Identifier: MIT
@@ -52,17 +52,31 @@
                         >;
                 };
 
-                awdwa {
+                layers {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  0  |  9  |  `  |
-// | CTRL |  !  |  &  |  =  |  *  |  +  |   |  {  |  (  |  [  |  ;  |  :  |  "  |
+// | CTRL |  !  |  &  |  =  |  *  |  +  |   |  {  |  (  |  [  |  ;  |  :  |  "  | &kp STAR
 // | SHFT |  $  |  ?  |  _  |  /  |  -  |   |  }  |  )  |  ]  |  <  |  >  |  |  |
-//                    |     |     | SPC |   | ENT |     |     |
+//                    | LALT|LCTRL| SPC |   | ENT |     |     |
                         bindings = <
    &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N0 &kp N9 &kp GRAVE
-   &kp LCTRL &kp EXCL &kp AMPS &kp EQUAL &kp STAR &kp PLUS &kp LBRC &kp LPAR &kp LBKT &kp SEMI &kp COLON &kp DQT
+   &kp LCTRL &kp EXCL &kp AMPS &kp EQUAL &mo 3 &kp PLUS &kp LBRC &kp LPAR &kp LBKT &kp SEMI &kp COLON &kp DQT
    &kp LSHFT &kp DLLR &kp QMARK &kp UNDER &kp FSLH &kp MINUS &kp RBRC &kp RPAR &kp RBKT &kp LT &kp GT &kp PIPE
-                      &trans &trans &kp SPACE &kp RET &trans &trans
+                      &kp LALT &kp LCTRL &kp SPACE &kp RET &trans &trans
+                        >;
+                };
+
+                symbols {
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |   |     |     |     |     |     |  `  |
+// |      |     |     |     |     |     |   |     |     |     |     |     |     |
+// |      |     |     |     |     |     |   |     |     |     |     |     |     |
+//                    | LALT|LCTRL| SPC |   |     |     |     |
+                        bindings = <
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp GRAVE
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                      &kp LALT &kp LCTRL &kp SPACE &trans &trans &trans
                         >;
                 };
         };
