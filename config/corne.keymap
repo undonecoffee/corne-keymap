@@ -51,5 +51,62 @@
                 &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
                         >;
                 };
+
+
+                layers {
+// -----------------------------------------------------------------------------------------
+// | TAB  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  0  |  9  |  `  |
+// | ESC  |     |     |     |symbl|macro|   |  {  |  (  |  [  |  ;  |  :  |  \  | 
+// | SHFT |     |     |     |rand |     |   |  }  |  )  |  ]  |  <  |  >  |  "  |
+//                    | LALT|LCTRL| SPC |   | ENT |     |     |
+                        bindings = <
+   &kp TAB   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5        &kp N6 &kp N7 &kp N8 &kp N0 &kp N9 &kp GRAVE
+   &kp ESC   &trans &trans &trans &mo 3  &mo 4         &kp LBRC &kp LPAR &kp LBKT &kp SEMI &kp COLON &kp BSLH
+   &kp LSHFT &trans &trans &trans &mo 5  &trans        &kp RBRC &kp RPAR &kp RBKT &kp LT &kp GT &kp DQT
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
+                        >;
+                };
+
+                symbols {
+// -----------------------------------------------------------------------------------------
+// | TAB  |     |     |     |     |     |   |  %  |  @  |  _  |  ~  |  !  |BSPC |
+// | ESC  |     |     |     |PRESS|     |   |  +  |  *  |  =  |  &  |  $  |  |  |
+// | SHFT |     |     |     |     |     |   |  -  |  /  |  #  |  ?  |  ^  | GUI |
+//                    | LALT|LCTRL| SPC |   | ENT |     |     |
+                        bindings = <
+   &kp TAB   &trans &trans &trans &trans &trans        &kp PRCNT &kp AT &kp UNDER &kp TILDE &kp EXCL &kp BSPC
+   &kp ESC   &trans &trans &trans &trans &trans        &kp PLUS &kp STAR &kp EQUAL &kp AMPS &kp DLLR &kp PIPE
+   &kp LSHFT &trans &trans &trans &trans &trans        &kp MINUS &kp FSLH &kp HASH &kp QMARK &kp CARET &kp LGUI
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
+                        >;
+                };
+
+                random {
+// -----------------------------------------------------------------------------------------
+// | TAB  |     |     |     |     |     |   |     |     |     |     |     |     |
+// | ESC  |     |     |     |     |PRESS|   |     |     |     |     |     |     |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |     |
+//                    | LALT|LCTRL| SPC |   | ENT |     |     |
+                        bindings = <
+   &kp TAB   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+   &kp ESC   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+   &kp LSHFT &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
+                        >;
+                };
+
+                macros {
+// -----------------------------------------------------------------------------------------
+// | TAB  |     |     |     |     |     |   |     |     |     |     |     |     |
+// | ESC  |     |     |     |     |     |   |     |     |     |     |     |     |
+// | SHFT |     |     |     |PRESS|     |   |     |     |     |     |     |     |
+//                    | LALT|LCTRL| SPC |   | ENT |     |     |
+                        bindings = <
+   &kp TAB   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+   &kp ESC   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+   &kp LSHFT &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
+                        >;
+                };
         };
 };
