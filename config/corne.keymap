@@ -45,7 +45,7 @@
 // | SHFT |     |     |     |     |     |   | UP  |LEFT |     |     |     |     |
 //                    | LALT|LCTRL| SPC |   | ENT |     |     |
                         bindings = <
-   &kp TAB   &trans &trans &trans &trans &trans        &kp DOWN &kp RIGHT &kp PSCRN C_PREV &kp C_PP &kp C_VOL_UP
+   &kp TAB   &trans &trans &trans &trans &trans        &kp DOWN &kp RIGHT &kp PSCRN &kp C_PREV &kp C_PP &kp C_VOL_UP
    &kp ESC   &trans &trans &trans &trans &trans        &kp DEL &kp CAPS &trans &trans &kp C_NEXT &kp C_VOL_DN
    &kp LSHFT &trans &trans &trans &trans &trans        &kp UP &kp LEFT &trans &trans &trans &trans
                 &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
