@@ -27,56 +27,85 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  '  |BSPC |
-// |  ESC |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |  /  |
+// | TAB  |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  '  |BSPC |
+// | ESC  |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |  /  |
 // | SHFT |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |     |  ,  |  .  | GUI |
-//                    | LALT|LCTRL| SPC |   | ENT | RSE  | lwr |
+//                    | LALT|LCTRL| SPC |   | ENT | num/layers | system  actions |
                         bindings = <
-   &kp TAB &kp Q &kp W &kp F &kp P &kp B    &kp J  &kp L  &kp U &kp Y &kp APOS  &kp BSPC
-   &kp ESC &kp A &kp R &kp S &kp T &rpi LEFT_SHIFT G  &kp M &kp N &kp E &kp I &kp O &kp FSLH
- &kp LSHFT &kp Z &kp X &kp C &kp D &kp V   &rpi LEFT_SHIFT K &kp H &trans &kp COMMA &kp DOT &kp LGUI
-                  &kp LALT &kp LCTRL &kp SPACE &kp RET &mo 2 &mo 1
+   &kp TAB &kp Q &kp W &kp F &kp P &kp B                    &kp J  &kp L  &kp U &kp Y &kp APOS  &kp BSPC
+   &kp ESC &kp A &kp R &kp S &kp T &rpi LEFT_SHIFT G        &rpi LEFT_SHIFT M &kp N &kp E &kp I &kp O &kp FSLH
+   &kp LSHFT &kp Z &kp X &kp C &kp D &kp V                  &kp K &kp H &trans &kp COMMA &kp DOT &kp LGUI
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &mo 1 &mo 2
                         >;
                 };
-                wdadwa {
+
+                system_actions {
 // -----------------------------------------------------------------------------------------
-// |   F1   |  F2  |  F3  |  F4  |  F5   |  F6  |   |PSCRN| DEL | pgUp| pgDn| play |  VUP |
-// |   F7   |  F8  |  F9  |  F10 |  F11  |  F12 |   | LFT | DWN |  UP | RGT | next | VDWN |
-// |LSHFT |bt clear| LALT |   ^  |   %   |      |   |  @  |  #  |  \  |  ~  |      | HOME |
-//                        | CAPS | LCTRL |  GUI |   |     |     |     |
+// | TAB  |     |     |     |     |     |   |DOWN |RIGHT|PSCRN|PREV |play | VUP |
+// | ESC  |     |     |     |     |     |   | DEL |CAPS |     |     |next |VDWN |
+// | SHFT |     |     |     |     |     |   | UP  |LEFT |     |     |     |     |
+//                    | LALT|LCTRL| SPC |   | ENT |     |     |
                         bindings = <
-    &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6    &kp PSCRN &kp DEL &kp PG_UP &kp PG_DN &kp C_PP &kp C_VOL_UP
-    &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_NEXT &kp C_VOL_DN
-    &kp LSHFT &bt BT_CLR &kp LALT &kp CARET &kp PRCNT &trans    &kp AT &kp HASH &kp BSLH &kp TILDE &trans &kp HOME
-                         &kp CAPS &kp LCTRL &kp LGUI    &trans &trans &trans
+   &kp TAB   &trans &trans &trans &trans &trans        &kp DOWN &kp RIGHT &kp PSCRN C_PREV &kp C_PP &kp C_VOL_UP
+   &kp ESC   &trans &trans &trans &trans &trans        &kp DEL &kp CAPS &trans &trans &kp C_NEXT &kp C_VOL_DN
+   &kp LSHFT &trans &trans &trans &trans &trans        &kp UP &kp LEFT &trans &trans &trans &trans
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
                         >;
                 };
 
                 layers {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  0  |  9  |  `  |
-// | CTRL |  !  |  &  |  =  |  *  |  +  |   |  {  |  (  |  [  |  ;  |  :  |  "  | &kp STAR
-// | SHFT |  $  |  ?  |  _  |  /  |  -  |   |  }  |  )  |  ]  |  <  |  >  |  |  |
+// | TAB  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  0  |  9  |  `  |
+// | ESC  |     |     |     |symbl|macro|   |  {  |  (  |  [  |  ;  |  :  |  \  | 
+// | SHFT |     |     |     |rand |     |   |  }  |  )  |  ]  |  <  |  >  |  "  |
 //                    | LALT|LCTRL| SPC |   | ENT |     |     |
                         bindings = <
-   &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N0 &kp N9 &kp GRAVE
-   &kp LCTRL &kp EXCL &kp AMPS &kp EQUAL &mo 3 &kp PLUS &kp LBRC &kp LPAR &kp LBKT &kp SEMI &kp COLON &kp DQT
-   &kp LSHFT &kp DLLR &kp QMARK &kp UNDER &kp FSLH &kp MINUS &kp RBRC &kp RPAR &kp RBKT &kp LT &kp GT &kp PIPE
-                      &kp LALT &kp LCTRL &kp SPACE &kp RET &trans &trans
+   &kp TAB   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5        &kp N6 &kp N7 &kp N8 &kp N0 &kp N9 &kp GRAVE
+   &kp ESC   &trans &trans &trans &mo 3  &mo 4         &kp LBRC &kp LPAR &kp LBKT &kp SEMI &kp COLON &kp BSLH
+   &kp LSHFT &trans &trans &trans &mo 5  &trans        &kp RBRC &kp RPAR &kp RBKT &kp LT &kp GT &kp DQT
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
                         >;
                 };
 
                 symbols {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |     |     |     |     |     |  `  |
-// |      |     |     |     |     |     |   |     |     |     |     |     |     |
-// |      |     |     |     |     |     |   |     |     |     |     |     |     |
-//                    | LALT|LCTRL| SPC |   |     |     |     |
+// | TAB  |     |     |     |     |     |   |  %  |  @  |  _  |  ~  |  !  |BSPC |
+// | ESC  |     |     |     |PRESS|     |   |  +  |  *  |  =  |  &  |  $  |  |  |
+// | SHFT |     |     |     |     |     |   |  -  |  /  |  #  |  ?  |  ^  | GUI |
+//                    | LALT|LCTRL| SPC |   | ENT |     |     |
                         bindings = <
-   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp GRAVE
-   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                      &kp LALT &kp LCTRL &kp SPACE &trans &trans &trans
+   &kp TAB   &trans &trans &trans &trans &trans        &kp PRCNT &kp AT &kp UNDER &kp TILDE &kp EXCL &kp BSPC
+   &kp ESC   &trans &trans &trans &trans &trans        &kp PLUS &kp STAR &kp EQUAL &kp AMPS &kp DLLR &kp PIPE
+   &kp LSHFT &trans &trans &trans &trans &trans        &kp MINUS &kp FSLH &kp HASH &kp QMARK &kp CARET &kp LGUI
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
+                        >;
+                };
+
+                random {
+// -----------------------------------------------------------------------------------------
+// | TAB  |     |     |     |     |     |   |     |     |     |     |     |     |
+// | ESC  |     |     |     |     |PRESS|   |     |     |     |     |     |     |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |     |
+//                    | LALT|LCTRL| SPC |   | ENT |     |     |
+                        bindings = <
+   &kp TAB   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+   &kp ESC   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+   &kp LSHFT &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
+                        >;
+                };
+
+                macros {
+// -----------------------------------------------------------------------------------------
+// | TAB  |     |     |     |     |     |   |     |     |     |     |     |     |
+// | ESC  |     |     |     |     |     |   |     |     |     |     |     |     |
+// | SHFT |     |     |     |PRESS|     |   |     |     |     |     |     |     |
+//                    | LALT|LCTRL| SPC |   | ENT |     |     |
+                        bindings = <
+   &kp TAB   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+   &kp ESC   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+   &kp LSHFT &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
                         >;
                 };
         };
