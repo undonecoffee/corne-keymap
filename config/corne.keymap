@@ -1,4 +1,4 @@
-ddddd/*
+/*
  * Copyright (c) 2020 The ZMK Contributors
  * ...
  * SPDX-License-Identifier: MIT
@@ -66,5 +66,18 @@ ddddd/*
                         >;
                 };
 
+                symbols {
+// -----------------------------------------------------------------------------------------
+// |      |     |     |     |     |     |   |     |     |     |     |     |  `  |
+// |      |     |     |     |     |     |   |     |     |     |     |     |     |
+// |      |     |     |     |     |     |   |     |     |     |     |     |     |
+//                    | LALT|LCTRL| SPC |   |     |     |     |
+                        bindings = <
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp GRAVE
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                      &kp LALT &kp LCTRL &kp SPACE &trans &trans &trans
+                        >;
+                };
         };
 };
