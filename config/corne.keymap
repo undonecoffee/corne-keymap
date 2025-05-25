@@ -35,7 +35,7 @@
    &kp TAB &kp Q &kp W &kp F &kp P &kp B                    &kp J  &kp L  &kp U &kp Y &kp APOS  &kp BSPC
    &kp ESC &kp A &kp R &kp S &kp T &rpi LEFT_SHIFT G        &rpi LEFT_SHIFT M &kp N &kp E &kp I &kp O &kp FSLH
    &kp LSHFT &kp Z &kp X &kp C &kp D &kp V                  &kp K &kp H &trans &kp COMMA &kp DOT &kp LGUI
-                &kp LALT &kp LCTRL &kp SPACE        &kp RET &mo 1 &mo 2
+                &kp LALT &kp LCTRL &kp SPACE        &kp RET &mo 2 &mo 1
                         >;
                 };
                 system_actions {
