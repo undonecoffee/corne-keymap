@@ -80,33 +80,5 @@
                 &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
                         >;
                 };
-
-                random {
-// -----------------------------------------------------------------------------------------
-// | TAB  |     |     |     |     |     |   |     |     |     |     |     |     |
-// | ESC  |     |     |     |     |PRESS|   |     |     |     |     |     |     |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |     |
-//                    | LALT|LCTRL| SPC |   | ENT |     |     |
-                        bindings = <
-   &kp TAB   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
-   &kp ESC   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
-   &kp LSHFT &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
-                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
-                        >;
-                };
-
-                macros {
-// -----------------------------------------------------------------------------------------
-// | TAB  |     |     |     |     |     |   |     |     |     |     |     |     |
-// | ESC  |     |     |     |     |     |   |     |     |     |     |     |     |
-// | SHFT |     |     |     |PRESS|     |   |     |     |     |     |     |     |
-//                    | LALT|LCTRL| SPC |   | ENT |     |     |
-                        bindings = <
-   &kp TAB   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
-   &kp ESC   &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
-   &kp LSHFT &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans
-                &kp LALT &kp LCTRL &kp SPACE        &kp RET &trans &trans
-                        >;
-                };
         };
 };
