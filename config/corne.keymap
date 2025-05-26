@@ -20,13 +20,22 @@
 	    };
     };
     macros {
-        gui: gui {
+        search: search {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
 		    = <&macro_press &kp LGUI>
 		    , <&macro_tap &kp SPACE>
 		    , <&macro_release &kp LGUI>
+		    ;
+        };
+        altf4: altf4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+		    = <&macro_press &kp LALT>
+		    , <&macro_tap &kp F4>
+		    , <&macro_release &kp LALT>
 		    ;
         };
     };
@@ -40,25 +49,25 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  '  |
 // |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |BSPC |  /  |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |     |  ,  |  .  | GUI |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |     |  ,  |  .  |search|
 //                    | LALT|LCTRL| SPC |   | ENT | RSE  | lwr |
                         bindings = <
    &kp TAB &kp Q &kp W &kp E &kp R &kp T    &kp Y  &kp U  &kp I &kp O &kp P  &kp APOS
    &kp ESC &kp A &kp S &kp D &kp F &rpi LEFT_SHIFT G  &kp H &kp J &kp K &kp L &kp BSPC &kp FSLH
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &rpi LEFT_SHIFT N &kp M  &trans &kp COMMA &kp DOT &gui
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &rpi LEFT_SHIFT N &kp M  &trans &kp COMMA &kp DOT &search
                   &kp LALT &kp LCTRL &kp SPACE &kp RET &mo 2 &mo 1
                         >;
                 };
                 system_actions {
 // -----------------------------------------------------------------------------------------
-// | TAB  |     |     |     |     |     |   |DOWN |RIGHT|PSCRN|PREV |play | VUP |
-// | ESC  |     |     |     |     |     |   | DEL |CAPS |     |     |next |VDWN |
-// | SHFT |     |     |     |     |     |   | UP  |LEFT |     |     |     |     |
+// | TAB  |     |     |     |     |     |   | DEL |AltF4|PSCRN|PREV |play | VUP |
+// | ESC  |     |     |     |     |     |   |LEFT |DOWN | UP  |RIGHT|next |VDWN |
+// | SHFT |     |     |     |     |     |   |CAPS |     |     |     |     |     |
 //                    | LALT|LCTRL| SPC |   | ENT |     |     |
                         bindings = <
-   &kp TAB   &none &none &none &none &none        &kp DEL &kp CAPS &kp PSCRN &kp C_PREV &kp C_PP &kp C_VOL_UP
+   &kp TAB   &none &none &none &none &none        &kp DEL &altf4 &kp PSCRN &kp C_PREV &kp C_PP &kp C_VOL_UP
    &kp ESC   &none &none &none &none &none        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_NEXT &kp C_VOL_DN
-   &kp LSHFT &none &none &none &none &none        &none &none &none &none &none &none
+   &kp LSHFT &none &none &none &none &none        &kp CAPS &none &none &none &none &none
                 &kp LALT &kp LCTRL &kp SPACE        &kp RET &none &none
                         >;
                 };
