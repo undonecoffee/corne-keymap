@@ -89,12 +89,12 @@
 
                 symbols {
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |  %  |  @  |  ^  |  #  |     |     |
+// |      |     |     |     |     |     |   |  %  |  @  |  ^  |  #  |TILDE|     |
 // |      |     |     |     |     |     |   |     |     |     |     |     |     |
 // |      |     |     |     |     |     |   |     |     |     |     |     |     |
 //                    | LALT|LCTRL| SPC |   | ENT |     |     |
                         bindings = <
-   &none &none &none &none &none &none        &kp PRCNT &kp AT &kp CARET &kp HASH &none &none 
+   &none &none &none &none &none &none        &kp PRCNT &kp AT &kp CARET &kp HASH &kp TILDE &none 
    &none &none &none &none &none &none        &none &none &none &none &none &none 
    &none &none &none &none &none &none        &none &none &none &none &none &none 
                 &none &none &none        &none &none &none
