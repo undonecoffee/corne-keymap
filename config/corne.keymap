@@ -38,6 +38,8 @@
 		    , <&macro_release &kp LALT>
 		    ;
         };
+        ctrlF1: ctrlF1 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp F1>, <&macro_release &kp LCTRL>;};
     };
 };
 
