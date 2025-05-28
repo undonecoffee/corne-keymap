@@ -49,16 +49,27 @@
         ctrlF5: ctrlF5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
             bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp F5>, <&macro_release &kp LCTRL>;};
 
-        altF1: ctrlF1 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+        altF1: altF1 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
             bindings = <&macro_press &kp LALT>, <&macro_tap &kp F1>, <&macro_release &kp LALT>;};
-        altF2: ctrlF2 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+        altF2: altF2 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
             bindings = <&macro_press &kp LALT>, <&macro_tap &kp F2>, <&macro_release &kp LALT>;};
-        altF3: ctrlF3 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+        altF3: altF3 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
             bindings = <&macro_press &kp LALT>, <&macro_tap &kp F3>, <&macro_release &kp LALT>;};
-        altF5: ctrlF5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+        altF5: altF4 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
             bindings = <&macro_press &kp LALT>, <&macro_tap &kp F5>, <&macro_release &kp LALT>;};
-        altF6: ctrlF6 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+        altF6: altF5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
             bindings = <&macro_press &kp LALT>, <&macro_tap &kp F6>, <&macro_release &kp LALT>;};
+
+        winF2: winF2 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F1>, <&macro_release &kp LGUI>;};
+        winF3: winF3 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F2>, <&macro_release &kp LGUI>;};
+        winF4: winF4 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F3>, <&macro_release &kp LGUI>;};
+        winF5: winF5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F4>, <&macro_release &kp LGUI>;};
+        winF6: winF6 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F5>, <&macro_release &kp LGUI>;};
     };
 };
 
