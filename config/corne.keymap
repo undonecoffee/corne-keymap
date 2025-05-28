@@ -95,14 +95,14 @@
 // afn wezterm = main, mainUtils, misc, misc, misc
 // sfn browser = music, docs1, docs2, YTstay, YTslop
 // -----------------------------------------------------------------------------------------
-// | TAB  | cF1 | cF2 | cF3 | cF4 | cF5 |   | DEL |AltF4|PSCRN|PREV |play | VUP |
-// | ESC  | aF1 | aF2 | aF3 | aF4 | aF5 |   |LEFT |DOWN | UP  |RIGHT|next |VDWN |
-// | SHFT | wF1 | wF2 | wF3 | wF4 | wF5 |   |CAPS |     |     |     |     |     |
+// | TAB  | cF1 | cF2 | cF3 | cF4 | cF5 |   | DEL |AltF4|PSCRN|PREV |play | VUP | &ctrlF1 &ctrlF2 &ctrlF3 &ctrlF4 &ctrlF5 
+// | ESC  | aF1 | aF2 | aF3 | aF4 | aF5 |   |LEFT |DOWN | UP  |RIGHT|next |VDWN | &altF1  &altF2  &altF3  &altF5  &altF6
+// | SHFT | wF1 | wF2 | wF3 | wF4 | wF5 |   |CAPS |     |     |     |     |     | &winF2  &winF3  &winF4  &winF5  &winF6
 //                    | LALT|LCTRL| SPC |   | ENT |     |     |  
                         bindings = <
-   &kp TAB   &ctrlF1 &ctrlF2 &ctrlF3 &ctrlF4 &ctrlF5        &kp DEL &altf4 &kp PSCRN &kp C_PREV &kp C_PP &kp C_VOL_UP
-   &kp ESC   &altF1  &altF2  &altF3  &altF5  &altF6        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_NEXT &kp C_VOL_DN
-   &kp LSHFT &winF2  &winF3  &winF4  &winF5  &winF6        &kp CAPS &none &none &none &none &none
+   &kp TAB   &none &none &none &none &none        &kp DEL &altf4 &kp PSCRN &kp C_PREV &kp C_PP &kp C_VOL_UP
+   &kp ESC   &none  &none  &none  &none  &none        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_NEXT &kp C_VOL_DN
+   &kp LSHFT &none  &none  &none  &none  &none        &kp CAPS &none &none &none &none &none
                 &kp LALT &kp LCTRL &kp SPACE        &kp RET &none &none
                         >;
                 };
