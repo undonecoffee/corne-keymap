@@ -38,6 +38,38 @@
 		    , <&macro_release &kp LALT>
 		    ;
         };
+        ctrlF1: ctrlF1 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp F1>, <&macro_release &kp LCTRL>;};
+        ctrlF2: ctrlF2 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp F2>, <&macro_release &kp LCTRL>;};
+        ctrlF3: ctrlF3 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp F3>, <&macro_release &kp LCTRL>;};
+        ctrlF4: ctrlF4 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp F4>, <&macro_release &kp LCTRL>;};
+        ctrlF5: ctrlF5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp F5>, <&macro_release &kp LCTRL>;};
+
+        altF1: ctrlF1 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp F1>, <&macro_release &kp LALT>;};
+        altF2: ctrlF2 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp F2>, <&macro_release &kp LALT>;};
+        altF3: ctrlF3 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp F3>, <&macro_release &kp LALT>;};
+        altF5: ctrlF5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp F5>, <&macro_release &kp LALT>;};
+        altF6: ctrlF6 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp F6>, <&macro_release &kp LALT>;};
+
+        winF2: winF2 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F1>, <&macro_release &kp LGUI>;};
+        winF3: winF3 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F2>, <&macro_release &kp LGUI>;};
+        winF4: winF4 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F3>, <&macro_release &kp LGUI>;};
+        winF5: winF5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F4>, <&macro_release &kp LGUI>;};
+        winF6: winF6 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F5>, <&macro_release &kp LGUI>;};
     };
 };
 
@@ -65,12 +97,12 @@
 // -----------------------------------------------------------------------------------------
 // | TAB  | cF1 | cF2 | cF3 | cF4 | cF5 |   | DEL |AltF4|PSCRN|PREV |play | VUP |
 // | ESC  | aF1 | aF2 | aF3 | aF4 | aF5 |   |LEFT |DOWN | UP  |RIGHT|next |VDWN |
-// | SHFT | sF1 | sF2 | sF3 | sF4 | sF5 |   |CAPS |     |     |     |     |     |
+// | SHFT | wF1 | wF2 | wF3 | wF4 | wF5 |   |CAPS |     |     |     |     |     |
 //                    | LALT|LCTRL| SPC |   | ENT |     |     |  
                         bindings = <
-   &kp TAB   &none &none &none &none &none        &kp DEL &altf4 &kp PSCRN &kp C_PREV &kp C_PP &kp C_VOL_UP
-   &kp ESC   &none &none &none &none &none        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_NEXT &kp C_VOL_DN
-   &kp LSHFT &none &none &none &none &none        &kp CAPS &none &none &none &none &none
+   &kp TAB   &ctrlF1 &ctrlF2 &ctrlF3 &ctrlF4 &ctrlF5        &kp DEL &altf4 &kp PSCRN &kp C_PREV &kp C_PP &kp C_VOL_UP
+   &kp ESC   &altF1  &altF2  &altF3  &altF5  &altF6        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_NEXT &kp C_VOL_DN
+   &kp LSHFT &winF2  &winF3  &winF4  &winF5  &winF6        &kp CAPS &none &none &none &none &none
                 &kp LALT &kp LCTRL &kp SPACE        &kp RET &none &none
                         >;
                 };
