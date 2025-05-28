@@ -60,16 +60,6 @@
         altF6: altF5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
             bindings = <&macro_press &kp LALT>, <&macro_tap &kp F6>, <&macro_release &kp LALT>;};
 
-        winF2: winF2 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F1>, <&macro_release &kp LGUI>;};
-        winF3: winF3 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F2>, <&macro_release &kp LGUI>;};
-        winF4: winF4 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F3>, <&macro_release &kp LGUI>;};
-        winF5: winF5 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F4>, <&macro_release &kp LGUI>;};
-        winF6: winF6 { compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI>, <&macro_tap &kp F5>, <&macro_release &kp LGUI>;};
     };
 };
 
