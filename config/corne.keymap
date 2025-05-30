@@ -127,12 +127,12 @@
 // -----------------------------------------------------------------------------------------
 // |      |     |     |     |     |     |   |  %  |  @  |  ^  |  #  |TILDE|     |
 // |      |     |     |     |     |     |   |     |     |     |     |     |     |
-// |      |     |     |     |     |     |   |     |     |     |     |     |     |
+// |      |     |     |     |     |     |   |     |     |     |     |     | BTC |
 //                    | LALT|LCTRL| SPC |   | ENT |     |     |
                         bindings = <
    &none &none &none &none &none &none        &kp PRCNT &kp AT &kp CARET &kp HASH &kp TILDE &none 
    &none &none &none &none &none &none        &none &none &none &none &none &none 
-   &none &none &none &none &none &none        &none &none &none &none &none &none 
+   &none &none &none &none &none &none        &none &none &none &none &none &&bt BT_CLR 
                 &none &none &none        &none &none &none
                         >;
                 };
