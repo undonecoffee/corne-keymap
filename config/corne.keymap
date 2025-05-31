@@ -81,13 +81,13 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  '  |
-// |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |BSPC |  /  |
+// |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |BSPC |  /  | &bt BT_CLR
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |     |  ,  |  .  |search|
 //                    | LALT|LCTRL| SPC |   | ENT | RSE  | lwr |
                         bindings = <
-   &kp TAB &kp Q &kp W &kp E &kp R &kp T    &kp Y  &kp U  &kp I &kp O &kp P  &kp APOS
-   &kp ESC &kp A &kp S &kp D &kp F &rpi LEFT_SHIFT G  &kp H &kp J &kp K &kp L &kp BSPC &kp FSLH
-   &kp LSHFT &bt BT_CLR  &kp X &kp C &kp V &kp B   &rpi LEFT_SHIFT N &kp M  &trans &kp COMMA &kp DOT &search
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T              &kp Y             &kp U  &kp I &kp O &kp P  &kp APOS
+   &kp ESC   &kp A &kp S &kp D &kp F &rpi LEFT_SHIFT G  &kp H             &kp J &kp K &kp L &kp BSPC &kp FSLH
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B              &rpi LEFT_SHIFT N &kp M  &trans &kp COMMA &kp DOT &search
                   &kp LALT &kp LCTRL &kp SPACE &kp RET &mo 2 &mo 1
                         >;
                 };
