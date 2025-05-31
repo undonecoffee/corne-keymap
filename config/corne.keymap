@@ -117,9 +117,9 @@
 //                    |OTHER|MACRO| SPC |   | ENT |     |     |
                         bindings = <
    &kp TAB &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7 &kp N8 &kp N0 &kp N9 &kp GRAVE
-   &kp LCTRL &kp EXCL &kp AMPS &kp EQUAL &kp STAR &kp PLUS &kp LBRC &kp LPAR &kp LBKT &kp SEMI &kp COLON &kp DQT
+   &kp LALT &kp EXCL &kp AMPS &kp EQUAL &kp STAR &kp PLUS &kp LBRC &kp LPAR &kp LBKT &kp SEMI &kp COLON &kp DQT
    &kp LSHFT &kp DLLR &kp QMARK &kp UNDER &kp FSLH &kp MINUS &kp RBRC &kp RPAR &kp RBKT &kp LT &kp GT &kp PIPE
-                      &none &none &kp SPACE &none &none &none
+                      &kp LCTRL &mo 3 &kp SPACE &none &none &none
                         >;
                 };
 
