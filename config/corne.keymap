@@ -98,12 +98,12 @@
 // -----------------------------------------------------------------------------------------
 // | TAB  | cF1 | cF2 | cF3 | cF4 | cF5 |   | DEL |AltF4|PSCRN|PREV |play | VUP | 
 // | ESC  | aF1 | aF2 | aF3 | aF5 | aF6 |   |LEFT |DOWN | UP  |RIGHT|next |VDWN | 
-// | SHFT | wF2 | wF3 | wF4 | wF5 | wF6 |   |CAPS |     |     |     |     |     |
+// | SHFT | wF2 | wF3 | wF4 | wF5 | wF6 |   |CAPS |pgdwn|pg up|     |     |     |
 //                    | LALT|LCTRL| SPC |   | ENT |     |     |  
                         bindings = <
    &kp TAB   &ctrlF1 &ctrlF2 &ctrlF3 &ctrlF4 &ctrlF5         &kp DEL &altf4 &kp PSCRN &kp C_PREV &kp C_PP &kp C_VOL_UP
    &kp ESC   &altF1  &altF2  &altF3  &altF5  &altF6        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_NEXT &kp C_VOL_DN
-   &kp LSHFT &winF2  &winF3  &winF4  &winF5  &winF6        &kp CAPS &none &none &none &none &none
+   &kp LSHFT &winF2  &winF3  &winF4  &winF5  &winF6        &kp CAPS &kp PG_DN &kp PG_UP &none &none &none
                 &kp LALT &kp LCTRL &kp SPACE        &kp RET &none &none
                         >;
                 };
