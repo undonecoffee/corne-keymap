@@ -95,9 +95,6 @@ CONFIG_ZMK_POINTING=y
                         >;
                 };
                 system_actions {
-// cfn = wezterm, browser, minecraft, misic?, discord
-// afn wezterm = main, mainUtils, misc, misc, misc
-// sfn browser = music, docs1, docs2, YTstay, YTslop
 // -----------------------------------------------------------------------------------------
 // | TAB  | cF1 | cF2 | cF3 | cF4 | cF5 |   | DEL |AltF4|PSCRN|PREV |play | VUP | 
 // | ESC  | aF1 | aF2 | aF3 | aF5 | aF6 |   |LEFT |DOWN | UP  |RIGHT|next |VDWN | 
@@ -140,18 +137,18 @@ CONFIG_ZMK_POINTING=y
                         >;
                 };
 
-                mouse {
+//                mouse {
 // -----------------------------------------------------------------------------------------
 // |      |     |     |     |     |     |   |     |     |     |     |     |     |
 // |      |     |     |     |     |     |   |     |     |     |     |     |     |
 // |      |     |     |     |PRESS|     |   |     |     |     |     |     |     |
 //                    |     |     |     |   |     |     |     |
-                        bindings = <
-   &none &none &none &mkp LCLK &mkp RCLK&none &mmv MOVE_X(-100) &mmv MOVE_Y(100) &mmv MOVE_Y(-100) &mmv MOVE_X(100) &none &none
-   &none &none &none &none &none &none        &mmv MOVE_X(-30) &mmv MOVE_Y(30) &mmv MOVE_Y(-30) &mmv MOVE_X(30)  &none &none
-   &none &none &none &none &none &none        &mmv MOVE_X(-5) &mmv MOVE_Y(5) &mmv MOVE_Y(-5) &mmv MOVE_X(5)  &none &none
-                     &none &none &none        &none &none &none
-                        >;
-                };
+//                        bindings = <
+//   &none &none &none &mkp LCLK &mkp RCLK&none &mmv MOVE_X(-100) &mmv MOVE_Y(100) &mmv MOVE_Y(-100) &mmv MOVE_X(100) &none &none
+//   &none &none &none &none &none &none        &mmv MOVE_X(-30) &mmv MOVE_Y(30) &mmv MOVE_Y(-30) &mmv MOVE_X(30)  &none &none
+//   &none &none &none &none &none &none        &mmv MOVE_X(-5) &mmv MOVE_Y(5) &mmv MOVE_Y(-5) &mmv MOVE_X(5)  &none &none
+//                     &none &none &none        &none &none &none
+//                        >;
+//                };
         };
 };
