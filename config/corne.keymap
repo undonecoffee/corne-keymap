@@ -7,9 +7,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/pointing.h>
+// #include <dt-bindings/zmk/pointing.h>
 
-CONFIG_ZMK_POINTING=y
+// CONFIG_ZMK_POINTING=y
 
 / { 
     behaviors {
@@ -133,7 +133,7 @@ CONFIG_ZMK_POINTING=y
    &none &none &none &none &none &none        &kp PRCNT &kp AT &kp CARET &none &kp TILDE &kp HASH 
    &none &none &none &none &none &none        &none &none &none &none &none &kp BSLH
    &none &none &none &none &none &none        &none &none &none &none &none &bt BT_CLR 
-                &none &mo 4 &none        &none &none &none
+                &none &none &none        &none &none &none
                         >;
                 };
 
