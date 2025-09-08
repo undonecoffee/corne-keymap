@@ -32,12 +32,12 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  `  |
 // |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |BSPC |  /  | &bt BT_CLR
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  @  |  ,  |  .  |search|
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  @  |  ,  |  .  | none |
 //                    | LALT|LCTRL| SPC |   | ENT | RSE  | mod |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T              &kp Y             &kp U &kp I  &kp O &kp P  &kp GRAVE
    &kp ESC   &kp A &kp S &kp D &kp F &rpi LEFT_SHIFT G  &kp H             &kp J &kp K  &kp L &kp BSPC &kp FSLH
-   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B              &rpi LEFT_SHIFT N &kp M &kp AT &kp COMMA &kp DOT &search
+   &kp LCTRL &kp Z &kp X &kp C &kp V &kp B              &rpi LEFT_SHIFT N &kp M &kp AT &kp COMMA &kp DOT &none
                   &kp LALT &kp LSHFT &kp SPACE &kp RET &mo 1 &kp LGUI
                         >;
                 };
