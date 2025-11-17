@@ -39,7 +39,7 @@ CONFIG_ZMK_POINTING=y
 &kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T        &kp Y    &kp U  &kp I   &kp O      &kp P     &kp APOS
 &kp ESC    &kp A  &kp S  &kp D         &kp F      &kp G        &kp H    &kp J  &kp K   &kp L      &kp BSPC  &kp FSLH
 &kp LCTRL  &kp Z  &kp X  &kp C         &kp V      &kp B        &kp N    &kp M  &kp AT  &kp COMMA  &kp DOT   &kp LEFT_ALT
-                         &kp LEFT_GUI  &kp LSHFT  &kp SPACE    &kp RET  &mo 1  &mo 4
+                         &mo 4  &kp LSHFT  &kp SPACE    &kp RET  &mo 1  &kp LEFT_GUI
             >;
         };
 
