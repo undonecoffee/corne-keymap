@@ -39,7 +39,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T        &kp Y    &kp U  &kp I   &kp O      &kp P     &kp APOS
 &kp ESC    &kp A  &kp S  &kp D         &kp F      &kp G        &kp H    &kp J  &kp K   &kp L      &kp BSPC  &kp FSLH
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp V      &kp B        &kp N    &kp M  &kp AT  &kp COMMA  &kp DOT   &none
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp V      &kp B        &kp N    &kp M  &kp AT  &kp COMMA  &kp DOT   &kp LEFT_ALT
                          &kp LEFT_GUI  &kp LSHFT  &kp SPACE    &kp RET  &mo 1  &mo 4
             >;
         };
@@ -86,7 +86,7 @@
         layer_4 {
             bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans       &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans     &none      &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans     &kp R      &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans     &trans     &trans       &trans          &trans          &trans        &trans           &trans  &trans
                         &mkp MCLK  &mkp RCLK  &mkp LCLK    &trans          &trans          &trans
             >;
