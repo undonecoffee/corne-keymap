@@ -5,13 +5,13 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-// #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/keys.h>
 
+// #include <dt-bindings/zmk/pointing.h>
 // CONFIG_ZMK_POINTING=y
 
-/ { 
+/ {
     behaviors {
         rpi: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
@@ -20,69 +20,89 @@
             tapping-term-ms = <200>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
-	    };
+        };
     };
 };
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-                default_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  '  |
-// |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |BSPC |  /  | &bt BT_CLR
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  @  |  ,  |  .  | none |
-//                    | LALT|LCTRL| SPC |   | ENT | RSE  | mod |
-                        bindings = <
-   &kp TAB   &kp Q &kp W    &kp E     &kp R         &kp T   &kp Y &kp U    &kp I  &kp O     &kp P    &kp APOS
-   &kp ESC   &kp A &kp S    &kp D     &kp F         &kp G   &kp H &kp J    &kp K  &kp L     &kp BSPC &kp FSLH
-   &kp LCTRL &kp Z &kp X    &kp C     &kp V         &kp B   &kp N &kp M    &kp AT &kp COMMA &kp DOT  &none
-                   &kp LALT &kp LSHFT &kp SPACE     &kp RET &mo 1 &kp LGUI
-                        >;
-                };
+        default_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  '  |
+            // |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |BSPC |  /  | &bt BT_CLR
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  @  |  ,  |  .  | none |
+            //                    | LALT|LCTRL| SPC |   | ENT | RSE  | mod |
 
-                layers {
-// -----------------------------------------------------------------------------------------
-// | TAB  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  0  |  9  |  `  |
-// | LALT |  !  |  &  |  =  |  *  |  +  |   |  {  |  (  |  [  |  ;  |  :  |  "  |
-// | SHFT |  $  |  ?  |  _  |  /  |  -  |   |  }  |  )  |  ]  |  <  |  >  |  |  |
-//                    |LCTRL|OTHER| SPC |   | ENT |||||||     |
-                        bindings = <
-   &kp TAB   &kp N1   &kp N2    &kp N3    &kp N4        &kp N5      &kp N6   &kp N7   &kp N8   &kp N0   &kp N9    &kp GRAVE
-   &kp LALT  &kp EXCL &kp AMPS  &kp EQUAL &kp STAR      &kp PLUS    &kp LBRC &kp LPAR &kp LBKT &kp SEMI &kp COLON &kp DQT
-   &kp LSHFT &kp DLLR &kp QMARK &kp UNDER &kp FSLH      &kp MINUS   &kp RBRC &kp RPAR &kp RBKT &kp LT   &kp GT    &kp PIPE
-                      &kp LCTRL &mo 2     &kp SPACE     &none       &none    &none
-                        >;
-                };
-
-                symbols {
-// -----------------------------------------------------------------------------------------
-// | TAB  |     |     |     |     |     |   |  %  |  @  |  ^  |     |TILDE|  #  |
-// | LALT |     |     |     |     |     |   |  ←  |  ↓  |  ↑  |  →  |     |  \  |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     | BTC |
-//                    |LCTRL||||||| SPC |   | ENT |||||||     |
-                        bindings = <
-   &kp TAB   &none &none &none     &none &none        &kp PRCNT &kp AT   &kp CARET &none     &kp TILDE &kp HASH 
-   &kp LALT  &none &none &none     &none &none        &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp BSLH
-   &kp LSHFT &none &none &none     &none &none        &none     &none    &none     &none     &none     &bt BT_CLR 
-                         &kp LCTRL &none &none        &none &none &none
-                        >;
-                };
-
-//                mouse {
-// -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |     |     |     |     |     |     |
-// |      |     |     |     |     |     |   |     |     |     |     |     |     |
-// |      |     |     |     |PRESS|     |   |     |     |     |     |     |     |
-//                    |     |     |     |   |     |     |     |
-//                        bindings = <
-//   &none &none &none &mkp LCLK &mkp RCLK&none &mmv MOVE_X(-100) &mmv MOVE_Y(100) &mmv MOVE_Y(-100) &mmv MOVE_X(100) &none &none
-//   &none &none &none &none &none &none        &mmv MOVE_X(-30) &mmv MOVE_Y(30) &mmv MOVE_Y(-30) &mmv MOVE_X(30)  &none &none
-//   &none &none &none &none &none &none        &mmv MOVE_X(-5) &mmv MOVE_Y(5) &mmv MOVE_Y(-5) &mmv MOVE_X(5)  &none &none
-//                     &none &none &none        &none &none &none
-//                        >;
-//                };
-
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T        &kp Y    &kp U  &kp I   &kp O      &kp P     &kp APOS
+&kp ESC    &kp A  &kp S  &kp D         &kp F      &kp G        &kp H    &kp J  &kp K   &kp L      &kp BSPC  &kp FSLH
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp V      &kp B        &kp N    &kp M  &kp AT  &kp COMMA  &kp DOT   &none
+                         &kp LEFT_GUI  &kp LSHFT  &kp SPACE    &kp RET  &mo 1  &mo 4
+            >;
         };
+
+        layers {
+            // -----------------------------------------------------------------------------------------
+            // | TAB  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  0  |  9  |  `  |
+            // | LALT |  !  |  &  |  =  |  *  |  +  |   |  {  |  (  |  [  |  ;  |  :  |  "  |
+            // | SHFT |  $  |  ?  |  _  |  /  |  -  |   |  }  |  )  |  ]  |  <  |  >  |  |  |
+            //                    |LCTRL|OTHER| SPC |   | ENT |||||||     |
+
+            bindings = <
+&kp TAB    &kp N1    &kp N2     &kp N3     &kp N4    &kp N5       &kp N6    &kp N7    &kp N8    &kp N0    &kp N9     &kp GRAVE
+&kp LALT   &kp EXCL  &kp AMPS   &kp EQUAL  &kp STAR  &kp PLUS     &kp LBRC  &kp LPAR  &kp LBKT  &kp SEMI  &kp COLON  &kp DQT
+&kp LSHFT  &kp DLLR  &kp QMARK  &kp UNDER  &kp FSLH  &kp MINUS    &kp RBRC  &kp RPAR  &kp RBKT  &kp LT    &kp GT     &kp PIPE
+                                &kp LCTRL  &mo 2     &kp SPACE    &none     &none     &none
+            >;
+        };
+
+        symbols {
+            // -----------------------------------------------------------------------------------------
+            // | TAB  |     |     |     |     |     |   |  %  |  @  |  ^  |     |TILDE|  #  |
+            // | LALT |     |     |     |     |     |   |  ←  |  ↓  |  ↑  |  →  |     |  \  |
+            // | SHFT |     |     |     |     |     |   |     |     |     |     |     | BTC |
+            //                    |LCTRL||||||| SPC |   | ENT |||||||     |
+
+            bindings = <
+&kp TAB   &none  &none  &none  &none  &none    &kp PRCNT  &kp AT    &kp CARET  &none      &kp TILDE   &kp HASH
+&kp LALT  &none  &none  &none  &none  &none    &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp BSLH    &kp LSHFT
+&none     &none  &none  &none  &none  &none    &none      &none     &none      &none      &bt BT_CLR  &kp LCTRL
+                        &none  &none  &none    &none      &none
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp T   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        //                mouse {
+        // -----------------------------------------------------------------------------------------
+        // |      |     |     |     |     |     |   |     |     |     |     |     |     |
+        // |      |     |     |     |     |     |   |     |     |     |     |     |     |
+        // |      |     |     |     |PRESS|     |   |     |     |     |     |     |     |
+        //                    |     |     |     |   |     |     |     |
+        //                        bindings = <
+        //   &none &none &none &mkp LCLK &mkp RCLK&none &mmv MOVE_X(-100) &mmv MOVE_Y(100) &mmv MOVE_Y(-100) &mmv MOVE_X(100) &none &none
+        //   &none &none &none &none &none &none        &mmv MOVE_X(-30) &mmv MOVE_Y(30) &mmv MOVE_Y(-30) &mmv MOVE_X(30)  &none &none
+        //   &none &none &none &none &none &none        &mmv MOVE_X(-5) &mmv MOVE_Y(5) &mmv MOVE_Y(-5) &mmv MOVE_X(5)  &none &none
+        //                     &none &none &none        &none &none &none
+        //                        >;
+        //                };
+    };
 };
