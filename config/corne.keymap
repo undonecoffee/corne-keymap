@@ -62,13 +62,13 @@
             // | TAB  |     |     |     |     |     |   |  %  |  @  |  ^  |     |TILDE|  #  |
             // | LALT |     |     |     |     |     |   |  ←  |  ↓  |  ↑  |  →  |     |  \  |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     | BTC |
-            //                    |LCTRL||||||| SPC |   | ENT |||||||     |
+            //                    |LCTRL||||||| SPC |   |BTCLR|||||||     |
 
             bindings = <
-&kp TAB   &none  &none  &none  &none  &none    &kp PRCNT  &kp AT    &kp CARET  &none      &kp TILDE   &kp HASH
-&kp LALT  &none  &none  &none  &none  &none    &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp BSLH    &kp LSHFT
-&none     &none  &none  &none  &none  &none    &none      &none     &none      &none      &bt BT_CLR  &kp LCTRL
-                        &none  &none  &none    &none      &none
+&kp TAB   &none  &none  &none     &none  &none    &kp PRCNT  &kp AT    &kp CARET  &none      &kp TILDE   &kp HASH
+&kp LALT  &none  &none  &none     &none  &none    &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp BSLH    &kp LSHFT
+&none     &none  &none  &none     &none  &none    &kp F2     &kp F3    &kp F4     &kp F5     &kp F6      &kp LCTRL
+                        &kp LCTRL &none  &none    &none      &none     &bt BT_CLR 
             >;
         };
 
