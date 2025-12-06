@@ -38,7 +38,7 @@
 &kp TAB    &kp Q  &kp W  &kp E         &kp R      &kp T        &kp Y    &kp U  &kp I   &kp O      &kp P     &kp APOS
 &kp ESC    &kp A  &kp S  &kp D         &kp F      &kp G        &kp H    &kp J  &kp K   &kp L      &kp BSPC  &kp FSLH
 &kp LCTRL  &kp Z  &kp X  &kp C         &kp V      &kp B        &kp N    &kp M  &kp AT  &kp COMMA  &kp DOT   &kp LEFT_ALT
-                         &mo 4  &kp LSHFT  &kp SPACE    &kp RET  &mo 1  &kp LEFT_GUI
+                         &mo 4         &kp LSHFT  &kp SPACE    &kp RET  &mo 1  &kp LEFT_GUI
             >;
         };
 
@@ -67,7 +67,7 @@
             bindings = <
 &kp TAB   &none  &none  &none     &none  &none    &kp PRCNT  &kp AT    &kp CARET  &none      &kp TILDE   &kp HASH
 &kp LALT  &none  &none  &none     &none  &none    &kp LEFT   &kp DOWN  &kp UP     &kp RIGHT  &kp BSLH    &kp LSHFT
-&none     &none  &none  &none     &none  &none    &kp F1     &kp F2    &kp F3     &kp F4     &kp F5      &kp LCTRL
+&none     &none  &none  &none     &kp F11&kp F12  &kp F1     &kp F2    &kp F3     &kp F4     &kp F5      &kp LCTRL
                         &kp LCTRL &none  &none    &none      &none     &bt BT_CLR 
             >;
         };
