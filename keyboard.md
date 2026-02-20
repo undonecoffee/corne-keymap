@@ -2,7 +2,7 @@ DISPLAY USE ONLY
 
 |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  '   |
 |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |BSPC |  /   | 
-| SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  @  |  ,  |  .  | none |
+| SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  @  |  ,  |  .  | ALT  |
                    | LALT|LCTRL| SPC |   | ENT | RSE  | mod |
                    
 | TAB  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  0  |  9  |  `  |
@@ -20,7 +20,7 @@ DISPLAY USE ONLY
 |      |sxhkd|reboot| open  |      |browse|   | school|  music |kitty|     |       |     |
                     |       |      | code |   |       | |||||||
 
-|      |     |     |     |      |      |   |  ←   |  ↓  |  ↑  |  →  |     |      | 
-|      |     |     |     |      |      |   |  ←   |  ↓  |  ↑  |  →  |     |      | 
 |      |     |     |     |      |      |   |      |     |     |     |     |      |
+|      |     |     |     |      |      |   |  ←   |  ↓  |  ↑  |  →  |     |      | 
+|      |     |     |     |      |      |   |  ←   |  ↓  |  ↑  |  →  |     |      | 
                    |||||||      |      |   | LCLK |RCLK |MCLK |
