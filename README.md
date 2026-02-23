@@ -12,7 +12,7 @@
 | Alt | F1  | F2  | F3  | F4  | F5  |   |  %  |     |  ^  |     |TILDE|  #  |
 |CTRL | F6  | F7  | F8  | F9  | F10 |   |  ←  |  ↓  |  ↑  |  →  |     |  \  |
 |Shift|     |     |     | F12 | F11 |   |     |     |     |     |     |     |
-                  |LCTRL|-----| SPC |  |BTCLR|-----|     |
+                  |LCTRL|-----| SPC |   |BTCLR|-----|     |
 
 | Tab |main |close |  obs  | misc | term |   |youtube|scrnshot|text |obsi |system |volUP|
 | ESC | AI  |      |discord|krita | git  |   |   ←   |    ↓   |  ↑  |  →  | pause |volDN| 
