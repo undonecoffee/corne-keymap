@@ -16,11 +16,11 @@ DISPLAY USE ONLY
                    |LCTRL||||||| SPC |   | ENT |||||||     |
 
 |      |main |close |  obs  | misc | term |   |youtube|scrnshot|text |obsi |system |volUP|
-|      | AI  |      |discord|krita | git  |   |   ←   |    ↓   |  ↑  |  →  |monitor|volDN| 
-|      |sxhkd|reboot| open  |      |browse|   | school|  music |kitty|     |       |     |
+|      | AI  |      |discord|krita | git  |   |   ←   |    ↓   |  ↑  |  →  | pause |volDN| 
+|      |sxhkd|reboot| open  |      |browse|   | school|  music |kitty|     | back  |skip |
                     |       |      | code |   |       | |||||||
 
+|      |     |     |     |      |      |   |  ←   |  ↓  |  ↑  |  →  |     |      | 
+|      |     |     |     |      |      |   |  ←   |  ↓  |  ↑  |  →  |     |      | 
 |      |     |     |     |      |      |   |      |     |     |     |     |      |
-|      |     |     |     |      |      |   |  ←   |  ↓  |  ↑  |  →  |     |      | 
-|      |     |     |     |      |      |   |  ←   |  ↓  |  ↑  |  →  |     |      | 
                    |||||||      |      |   | LCLK |RCLK |MCLK |
