@@ -60,16 +60,16 @@
 
 symbols {
             // -----------------------------------------------------------------------------------------
-            // | TAB  | F1  | F2  | F3  | F4  | F5  |   |  %  |     |  ^  |     |TILDE|  #  |
-            // | LALT | F6  | F7  | F8  | F9  | F10 |   |  ←  |  ↓  |  ↑  |  →  |     |  \  |
+            // | ALT  | F1  | F2  | F3  | F4  | F5  |   |  %  |     |  ^  |     |TILDE|  #  |
+            // | CTRL | F6  | F7  | F8  | F9  | F10 |   |  ←  |  ↓  |  ↑  |  →  |     |  \  |
             // | SHFT |     |     |     | F12 | F11 |   |     |     |     |     |     |     |
-            //                    |LCTRL||||||| SPC |   |BTCLR|||||||     |
+            //                    | TAB ||||||| SPC |   |BTCLR|||||||     |
 
             bindings = <
-&kp TAB   &kp F1 &kp F2 &kp F3    &kp F4  &kp F5     &kp PRCNT  &none    &kp CARET &none     &kp TILDE &kp HASH
-&kp LALT  &kp F6 &kp F7 &kp F8    &kp F9  &kp F10    &kp LEFT   &kp DOWN &kp UP    &kp RIGHT &none     &kp BSLH
+&kp LALT   &kp F1 &kp F2 &kp F3    &kp F4  &kp F5     &kp PRCNT  &none    &kp CARET &none     &kp TILDE &kp HASH
+&kp LCTRL  &kp F6 &kp F7 &kp F8    &kp F9  &kp F10    &kp LEFT   &kp DOWN &kp UP    &kp RIGHT &none     &kp BSLH
 &kp LSHFT &none  &none  &none     &kp F12 &kp F11    &none      &none    &none     &none     &none     &none
-                        &kp LCTRL &none   &kp SPC    &bt BT_CLR &none &none
+                        &kp TAB &none   &kp SPC    &bt BT_CLR &none &none
             >;
         };
 
