@@ -3,7 +3,8 @@
 ```
 
 WM keybinds are all in my sxhkd config. they just use the base keys with MOD
-2 places for arrow keys because im used to both for different things. Should problably change that soon.
+2 places for arrow keys because im used to both for 
+different things. Should problably change that soon.
 
 
 Base
@@ -21,7 +22,7 @@ Symbols
 Funcion
 | Alt | F1  | F2  | F3  | F4  | F5  |   |  %  |     |  ^  |     |TILDE|  #  |
 |CTRL | F6  | F7  | F8  | F9  | F10 |   |  ←  |  ↓  |  ↑  |  →  |     |  \  |
-|Shift|     |     |     | F12 | F11 |   |     |     |     |     |     |     |
+|Shift|     |     |     | F12 | F11 |   |PAGUP|PAGDN|     |     |     |     |
                   |LCTRL|-----| SPC |   |BTCLR|-----|     |
 
 WM
