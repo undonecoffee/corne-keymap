@@ -68,7 +68,7 @@ symbols {
             bindings = <
 &kp LALT   &kp F1 &kp F2  &kp F3    &kp F4  &kp F5     &kp PRCNT  &none    &kp CARET &none     &kp TILDE &kp HASH
 &kp LCTRL  &kp F6 &kp F7  &kp F8    &kp F9  &kp F10    &kp LEFT   &kp DOWN &kp UP    &kp RIGHT &none     &kp BSLH
-&kp LSHFT  &none  &kp F14 &kp F13   &kp F12 &kp F11    &none      &PG_UP    &PG_DN     &none     &none     &none
+&kp LSHFT  &none  &kp F14 &kp F13   &kp F12 &kp F11    &none      &PG_DN    &PG_UP     &none     &none     &none
                         &kp TAB &none   &kp SPC    &bt BT_CLR &none &none
             >;
         };
