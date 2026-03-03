@@ -1,8 +1,11 @@
+
+
+```
+
 WM keybinds are all in my sxhkd config. they just use the base keys with MOD
 2 places for arrow keys because im used to both for different things. Should problably change that soon.
 
 
-```
 Base
 | Tab |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  '   |
 | ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |BSPC |  /   |
